@@ -1,0 +1,35 @@
+body{
+    background-image: url('../assets/senja.jpg');
+    background-size:cover ;
+ 
+
+}
+.title{
+    font-family: 'Viga', sans-serif ;
+    color: aliceblue;
+}
+
+.login-form{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+.login{
+    color: aliceblue;
+    font-family: 'Viga', sans-serif;
+}
+@media(min-width: 992px){
+.title{
+    font-size:60px ;
+}
+.navbar, .navlink, a{ 
+    font-family: 'Viga', sans-serif ;
+    color: rgb(255, 255, 255) !important;
+   
+}
+.home{
+    color: turquoise;
+}
+
+
+}
+

@@ -1,0 +1,258 @@
+/* :root {
+  --c-custom-primary: #333;
+ /* } */
+/* body{ 
+  font-family: 'Viga', sans-serif;
+}  */
+  
+.navbar{
+    position: relative;
+    z-index: 1;
+    font-family: 'Viga', sans-serif;
+  }
+  .navbar-brand{
+    font-family: 'Viga', sans-serif;
+    font-size: 32px;
+}
+.btn-primary{
+  border-radius: 5px;
+ }
+.line{
+    padding: 20px;
+}
+.row{
+    padding-top:10px;
+}
+.jumbotron{
+    background-image: url('../assets/wisata.jpg');
+    background-size: cover;
+    height: 440px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.jumbotron::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+  }
+  .jumbotron .container {
+    margin-top: 30px;
+    z-index:1;
+    position: relative;
+    display: block;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .jumbotron .display-4{
+    color:white;
+    font-weight: 100px !important;
+    margin-top: 150px;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .jumbotron .display-4 span {
+    font-weight: 500;
+  }
+  .info-panel{
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    margin-top:-100px;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  .info-panel img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  .info-panel p{
+    font-size: 14px;
+    color: #ACACAC;
+    margin-top: -5px;
+    font-weight: 200;
+  }
+  .subtitle{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+/* rekreasi */
+.slide{
+  background-size:cover;
+  width: 100%;
+}
+.caption{
+  color:white;
+  /* font-weight: 1 !important; */
+  text-shadow:1px 1px 1px rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+  font-size: 20px;
+ }
+ .image1{
+  border-radius: 7px;
+}
+/* detile Rekreasi */
+.detile{
+  background-image: url('../assets/kubah.jpg');
+  /* margin-top:-75px; */
+  height: 640px;
+ }
+.detile1{
+  background-image: url('../assets/kuliner.jpg');
+}
+
+.depok{
+  width: 60px;
+}
+.news{
+  border-radius:10px;
+  padding: 20px;
+  border-top:10px solid #00af91 !important;
+  border: 1px solid #00af91;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.news2{
+ border-radius:10px;
+ border: 1px solid #2fa84b ;
+ padding: 20px;
+ margin-bottom: 5px;
+ border-top:10px solid #2fa84b !important;
+ box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.news3{
+  border-radius:10px;
+  border: 1px solid #f17808;
+  padding: 20px;
+  margin-bottom: 5px;
+  border-top:10px solid #f17808 !important;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+ }
+.gallery{
+  transition: transform .2s;
+}
+.gallery:hover{
+  transform: scale(1.5);
+}
+
+
+  @media (min-width: 992px) { 
+    .navbar-brand, .nav-link{
+        color:white !important;
+        text-shadow:1px 1px 1px rgba(0, 0, 0, 0.7)
+       }
+        .nav-link{
+          text-transform: uppercase;
+          margin-right: 5px;
+          
+        }
+        .nav-link:hover::after{
+          content: "";
+          display: block;
+          border-bottom: 3px solid  darksalmon;
+          width:50%;
+          margin: auto;
+          padding-bottom: 5px;
+          margin-bottom: -8px;
+        }
+    .jumbotron{ 
+        margin-top:-75px;
+        height: 640px;
+     }
+     .jumbotron .container {
+      margin-top: 30px;
+      z-index:1;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+    }
+     .jumbotron .display-4{
+       font-size: 62px;
+     }
+     .news{
+       border-radius:10px;
+       padding: 20px;
+       border-top:10px solid #00af91;
+       border: 1px solid #00af91;
+       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+     }
+     .news2{
+      border-radius:10px;
+      border-top:10px solid #2fa84b;
+      border: 1px solid #2fa84b;
+      padding: 20px;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    }
+    .news3{
+      border-radius:10px;
+      border: 1px solid #f17808;
+      padding: 20px;
+      margin-bottom: 5px;
+      border-top:10px solid #f17808;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+     }
+     .subtitle{
+       margin-top: 30px;
+       margin-bottom: 30px;
+       font-size: 40px;
+       font-weight: 500;
+     }
+     .detile{
+      margin-top:-75px;
+      height: 640px;
+     }
+   .slide{
+     width: 100%;
+   }
+   .slide::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+   }
+   .carousel{
+     margin-top: -75px;
+   }
+   .caption{
+    color:white;
+    font-weight: 100px !important;
+    margin-top: 150px;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    font-size: 40px;
+   }
+   .image1{
+     border-radius: 7px;
+   }
+   .andro{
+     display: none;
+   }
+   .foto{
+     border-radius: 4px;
+   }
+   .testi{
+     margin-top: 30px;
+   }
+   .depok{
+    width:10%;
+    margin-top: 70px;
+    margin-left: 50px;
+   }
+
+   }
